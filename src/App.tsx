@@ -21,6 +21,10 @@ function App() {
   });
 
   useEffect(() => {
+    console.log("planet effect fired ", planet);
+  }, [planet]);
+
+  useEffect(() => {
     console.log("energy updated out of component ", planet.energy);
   }, [planet.energy]);
 
